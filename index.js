@@ -25,10 +25,7 @@ const getInfo = async (movieName) => {
     let response;
     try {
         request = await fetch(url);
-        console.log(request);
-
         response = await request.json();
-        console.log(response);
     } catch (error) {
         console.log(error);
     }
